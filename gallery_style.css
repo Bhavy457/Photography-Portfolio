@@ -1,0 +1,165 @@
+
+body {
+  background: #000000;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+}
+
+/* Nav section Start */
+.nav{
+    color: #efecec;
+    width:  100vw;
+	height: 10vh;
+    background-color: transparent;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.navlogo{
+    width: 30%;
+    height: 100px;
+    display: flex;
+	margin-left: 15%;
+}
+.navoptions{
+	color: #F8F6E0;
+	width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
+   	margin-right: 10%; 
+    float: right;
+	z-index: 2;
+}
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+/*Nav  section end */
+
+
+.main-content {
+	z-index: 2;
+	text-align: center;
+	text-transform: uppercase;
+	scroll-snap-type: y mandatory;
+	position: relative;
+	height: 65vh;
+	background-color: #000000;
+	background-image: url("/phtos/banner.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 99%;
+  }
+  
+  .hover,
+  .word,
+  h1 {
+	cursor: pointer;
+  }
+  
+  h1 {
+	position: relative;
+	color: #fff;
+	font: 900 60px Montserrat;
+	text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .concept {
+	/* position: relative; */
+	/* padding: 5em; */
+	height: 50vh;
+	overflow: hidden;
+	scroll-snap-align: center;
+  }
+  .concept:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+	opacity: 0;
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .concept:hover:before {
+	opacity: 0.5;
+  }
+  .concept-two {
+	width: 80%;
+	display: grid;
+	grid: 100%/repeat(7, 1fr);
+	margin-left: 10%;
+	/* padding: 5em 15em; */
+/*Can add background image*/
+  }
+  .concept-two .hover {
+	/* position: relative; */
+	display: grid;
+	place-items: center;
+  }
+  .concept-two h1 {
+	color: transparent;
+	text-align: 0 1px 1px;
+	-webkit-text-stroke: 2px #fff;
+	text-shadow: none;
+	transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .concept-two .hover:hover h1 {
+	transform: scale(1.5);
+	color: #fff;
+	-webkit-text-stroke: 2px transparent;
+	text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #gallery {
+	margin-top: 1vh;
+	line-height:0;
+	-webkit-column-count:4; 
+	-webkit-column-gap:5px; 
+	column-count:4;
+	column-gap:5px;
+	position: relative;
+ }
+
+ #gallery img {
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom:5px; 
+	/*filter: blur(5px)*/
+	filter: grayscale(100%);
+ }
+
+ #gallery img:hover {
+	filter:none;
+	border: 2px solid brown;
+ }
+
+  
+  @media screen and (max-width: 800px) {
+	#gallery {
+		-moz-column-count:    2;
+		column-count:         2;
+	   }
+	
+	.main-content
+	{
+		max-width: 100%;
+		max-height: 60vh;
+	}
+	.concept
+	{
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+	h1 {
+		font: 900 20px Montserrat;
+	}
+	.concept-two {
+		padding: 2em 10em;
+	}
+  }
+ 
+	
+  

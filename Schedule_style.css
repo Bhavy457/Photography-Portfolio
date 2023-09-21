@@ -1,0 +1,128 @@
+.html {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #444;
+}
+
+body {
+    margin: 0;
+    background: #000000;
+    font-size: 1em;
+}
+/* Nav section Start */
+.nav{
+    color: #efecec;
+    width:  100vw;
+    background-color: transparent;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.navlogo{
+    width: 30vw;
+    color: #F8F6E0;
+    margin-left: 5%;
+    
+    float: left;
+}
+.navoptions{
+	color: #F8F6E0;
+	width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
+    float: right;
+    padding-bottom: 5%;
+}
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+/*Nav  section end */
+
+.wrapper {
+    margin: 15px auto;
+    max-width: 1100px;
+}
+
+.container-calendar {
+    background: #C6C6C6;
+    padding: 220px;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+    padding: 6px;
+    border: 3px solid #f9e6e6;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 3px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(1) {
+  color: red;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 3em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
